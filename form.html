@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/bootstrap-custom.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<section id="sec-form">
+	<div class="container">
+		<h2 class="titulo">Formularios</h2>
+		<form name="form-registro" method="post" action="form.html" class="col-md-6 mx-auto">
+		
+			<div class="row">
+		<div class="form-group col-md-6 col-sm-6 col-xs-12">
+			<label>Name</label>
+			<input type="text" name="nombre" id="nombre" class="form-control" required maxlength="40" placeholder="Your Name">
+			</div>
+			
+			<div class="form-group col-md-6 col-sm-6 col-xs-12">
+			<label>Last Name</label>
+			<input type="text" name="apellido" id="apellido" class="form-control" placeholder="Last name">
+			</div>
+			</div>
+		
+			<div class="form-group">
+			<label>Age</label>
+			<input type="number" name="edad" id="edad" class="form-control" required placeholder="Your Age">
+			</div>
+			
+			<div class="form-group">
+			<label>Direction</label>
+			<textarea name="direction" id="direction" rows="6" class="form-control">
+				</textarea>
+			</div>
+			
+			<div class="row">
+				<div class="form-group col-md-6 col-sm-6 col-xs-12">
+				
+				<label>Country</label>
+					<select name="pais" id="pais" class="form-control">
+					<option value="HND">Honduras</option>
+						<option value="GTM">Guatemala</option>
+						<option value="SLV">El Salvador</option>
+						<option value="MEX">Mexico</option>
+						<option value="USA">Estados Unidos</option>
+					</select>
+					</div>
+					<div class="form-group col-md-6 col-sm-6 col-xs-12">
+					<label>Gender</label>
+						<div class="form-check">
+						<label>
+							Male
+							<input type="radio" name="genero" id="masculino" value="masculino" checked>
+							</label>
+							</div>
+						<div class="form-check">
+							<label>
+							Female
+							<input type="radio" name="genero" id="femenino" value="femenino">
+							</label>
+							</div>
+						</div>
+					</div>
+				
+				
+			<div class="form-group"><button type="button" class="btn btn-primary">Send Data</button>
+					<button type="reset" class="btn btn-light">CANCEL</button>
+				</div>
+		</form>
+		</div>
+	</section>
+</body>
+</html>

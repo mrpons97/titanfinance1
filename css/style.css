@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700|Volkhov:400,400i,700i');
+	
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #666666;
+	margin: 0;
+}
+
+header{
+	background-color: transparent;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	top:0;
+	z-index: 9999;
+}
+
+header h1{
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 400;
+	font-size: 22;
+}
+
+#sec-hero{
+	background-image: url(../img/finance_header_bg.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 130px 0;
+	color: #FFFFFF;
+}
+
+#sec-hero h4, 
+#sec-hero h1{
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#sec-hero h4{
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#sec-hero h1{
+	font-size: 50px;
+	margin-top: 40px;
+	letter-spacing: 20px;
+	margin-bottom: 30px;
+}
+
+.btn-transparente{
+	background-color:transparent;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 7px 30px;
+	letter-spacing: 2px;
+}
+
+.btn-transparente:hover{
+	background-color: #fff;
+}
+
+#sec-quote{
+	background-color: #000000;
+	padding: 40px 0px;
+	text-transform: uppercase;
+	color: #aaa;
+}
+
+
+#sec-quote h3{
+	font-size: 16px;
+	font-weight:600px;
+	letter-spacing: 2px
+}
+
+#sec-quote h5{
+	font-size: 14px;
+	padding-top:0px;
+}
+
+.btn-white{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px 30px;
+	color: #111;
+	background-color: #aaa;
+}
+
+.sec-espacio{
+	padding: 100px 0;
+}
+
+#sec-title h3{
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 10px;
+	text-align: center;
+	color: #111;
+	font-weight: 600;
+}
+
+#sec-tittle p{
+	text-align:center;
+}
+
+
+#sec-icon{
+	background-color:black;
+	text-align:center;
+	color:white;
+	padding: 100px 100px;
+}
+
+#sec-icon h3{
+	letter-spacing: 2px;
+	font-size: 18px;
+	padding-top: 20px;
+
+}
+
+#sec-icon h5{
+	font-style:italic;
+	font-size: 12px;
+}
+
+.border{
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+
+}
+
+#sec-area img {
+	padding-top: 70px;
+}
+
+#sec-area h2{
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+#sec-area h3{
+	color: black;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight:600;
+	letter-spacing: 2px;
+}
+
+#sec-area p{
+	font-size: 15px;
+}
+
+#sec-area{
+ padding-top: 50px;	
+}
+
+.titulo{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #111;
+	margin-bottom: 40px;
+}
+
+.subtitulo{
+	font-family: 'Volkhov', serif;
+	font-size: 26px;
+	font-style:italic;
+}
+#sec-area .icon{
+	border: 1px solid #111;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+.padre{
+	position:relative;
+}
+
+.hijo{
+	position:absolute;
+	left: 0;
+
+	width: 100%;
+
+	color:#fff;
+	text-align:center;
+	opacity: 0; 
+	transition: all 0.4s ease-in-out;
+	bottom: 100%;
+}
+
+.padre:hover .hijo{
+	opacity:1;
+	transition: all 0.4s ease-in-out;
+	bottom: 50%;
+	transform:translateY(50%);
+}
+
+.hijo h3{
+	font-size: 12px;
+	text-transform:uppercase;
+}
+
+.hijo h4 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #aaa;
+}
+
+.bg-overlay{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	top:0;
+	background-color: rgba(0,0, 0,0.60);
+	opacity:0;
+}
+
+.padre:hover .bg-overlay{
+	opacity:1;
+	transition: all 0.4s ease-in-out;
+}
+
+.case2{
+	position: relative;
+}
+.case2 .bg-overlay{
+	opacity: 1;
+}
+
+.case2 .case-info{
+	position:absolute;
+	width: 100%;
+	bottom: 0;
+	height: 20%;
+	background-color: #000;
+	text-align:center;
+	padding: 10px 0;
+	color: #FFFFFF;
+}
+
+.case2:hover .case-info{
+	bottom: 0;
+	transform:none;
+}
+
+.case-info h3{
+	font-size: 12px;
+	text-transform:uppercase;
+}
+
+.case-info h4 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #aaa;
+}
+
+#sec-request{
+	background-image: url(../img/rqst_bg.jpg);
+	background-position: center;
+	background-size:cover;
+	padding: 50px 0;
+	color: #fff;
+	position:relative;
+}
+
+#sec-request .bg-overlay{
+	opacity:1;
+}
+
+#sec-request .titulo{
+	color:#fff;
+	font-size: 26px;
+	margin-bottom:10px
+}
+
+#sec-request .btn{
+	background-color: transparent;
+	color: #fff;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+
+.icon-counter{
+	font-size: 40px;
+}
